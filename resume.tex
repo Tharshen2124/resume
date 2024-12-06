@@ -1,0 +1,186 @@
+%-------------------------
+% Resume in Latex
+% Author : Tharshen A/L Surian Balan
+% Website: https://github.com/Tharshen2124
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1)
+                --++ (-0, 1.2)
+                --++ (0.6, 0)
+                --++ (0, -0.6)
+                --++ (0.6, 0)
+                --++ (0, -1);
+            \path[draw,
+                line width = 0.5,
+                rounded corners=0.5]
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5)
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1)
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://tharshen.tech}{\Large Tharshen A/L Surian Balan}} & Email : \href{mailto:tharshensurianbalan@gmail.com}{tharshensurianbalan@gmail.com}\\
+  \href{https://tharshen.tech}{https://tharshen.tech} & Mobile : +6010-667-3148 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Multimedia University}{Cyberjaya, Malaysia}
+      {Diploma in Information Technology;  CGPA: (3.94/4.00)}{Apr.2022 - Present}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Pethub \href{https://github.com/Tharshen2124/pethub-backend}{\ExternalLink}}
+      {A final year project that is a general pet service web app where users can make appointments to different pet services, check out pet related news topics and have discussions in our pet forums. - \textit{Next.js, Tailwind, Laravel, MySQL}}
+    \resumeSubItem{Hacktrack MMU \href{https://hacktrackmmu.herokuapp.com}{\ExternalLink}}
+      {A website where we in Hackerspace manage our members details and store their IdeaTalks and ProgressTalks relating to the projects they have worked on. - \textit{Svelte, Tailwind, Ruby on Rails, PostgreSQL}}
+    \resumeSubItem{Restaurant Order Website \href{https://github.com/Tharshen2124/Restaurant-api}{\ExternalLink}}
+      {A website where users can view and add menu items to their cart
+and then confirm their order to send it to the kitchen. - \textit{Next.js, Tailwind, Laravel, MySQL}}
+    \resumeSubItem{Number Guesser Game \href{https://guesswhatsthenumber.netlify.app/}{\ExternalLink}}
+      {A game i made using some vanilla JavaScript with HTML and CSS. You predict the give number that will be shown after you press the guess button. The computer will also try to guess it. Whoever is the closest wins a point! - \textit{HTML, CSS, JavaScript}}
+    \resumeSubItem{File Sorter \href{https://github.com/Tharshen2124/File-sorter}{\ExternalLink}}
+      {A script that sorts files in your file explorer based on the extensions of the files and places them into respective folders with the file extension as their names. - \textit{Python}}
+    \resumeSubItem{To-do List Website \href{https://github.com/Tharshen2124/To-do-List-website}{\ExternalLink}}
+      {Users can input a task and set a date when they would like to complete it which is either today or tomorrow. Users can also check the task as completed as well as edit and delete the task. - \textit{Tailwind, Laravel, MySQL}}
+    
+  \resumeSubHeadingListEnd
+
+\section{Co-curricular activities/Leadership Experiences}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Hackerspace MMU \href{https://hackerspacemmu.rocks/}{\ExternalLink}}{Cyberjaya, Malaysia}
+        {Member}{Jun.2022 - Present}
+        \resumeItemListStart
+            \resumeItem{President (Sept. 2023 - Present)}{Manage in onboarding new members and helping them by walking through on their an idea to prepare them for their first IdeaTalk. Interact with all members and check in their projects’ progresses once in a while.}
+            \resumeItem{Secretary (Jan. 2023 - Sept 2023)}{input the IdeaTalks and
+ProgressTalks given by members and determines the host for each meeting.}
+        \resumeItemListEnd
+        \resumeSubheading
+          {IT Society MMU \href{https://www.itsociety.rocks/}{\ExternalLink}}{Cyberjaya, Malaysia}
+          {Technical Division Member}{Feb. 2023 - Present}
+          \resumeItemListStart
+            \resumeItem{IT Society Committee}
+              {Added a contact us section and worked on code refactoring on the IT society website using Next.js and Storyblok.}
+            \resumeItem{BarCamp 2023 (Head of Technical Division) \href{https://barcampcyber.wordpress.com}{\ExternalLink}}
+              { Conducted interviews to determine the team’s members. Create and managed the tasks distribution for everyone in the Technical Division. Built the entire BarCamp Cyberjaya 2023 website on WordPress to save time and money.}
+            \resumeItem{Tech Career Days 2023 (Member of Technical Division)}
+              {Worked on the backend of the Tech Career Days website using Express.js. Fixed some small bugs and added some small new features.}
+            \resumeItem{CodeNection 2022 (Member of Multimedia Division)}
+              {Worked on the designing a section of the CodeNection website, edited videos for promotion and ending credits and worked on a few poster designs.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \section{Leadership Experiences}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+          {Taylor's University Hackathon 2023}{Top 10 Finalist}
+          {Sustainable Smart City Hackathon}{Aug. 2023}
+          \resumeItemListStart
+            \resumeItem{Heco \href{https://hecohealth.vercel.app}{\ExternalLink}}
+              {Participated in a team. Build a web application that uses an alogrithm to recommend the best healthcare facility for users. Algorithm will take in different factors. Factors include distance, cost, rating and reviews. Used a trained ML model to give a sentiment analysis of the reviews.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+        \textbf{Languages}{: Javascript/Typescript, PHP, Python, Ruby(basics), SQL }
+   }
+   \item{
+        \textbf{Technologies}{: Svelte, Next.js, React, Laravel, Tailwind, Bootstrap, Ruby on Rails, Express.js(unfamiliar)}
+   }
+   \item{
+        \textbf{Others}{: Git, Figma}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
